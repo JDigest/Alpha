@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Query text:</strong>
+  <%= @query.query_text %>
+</p>
+
+<p>
+  <strong>Location text:</strong>
+  <%= @query.location_text %>
+</p>
+
+<p>
+  <strong>User location:</strong>
+  <%= @query.user_location %>
+</p>
+
+<%= link_to 'Edit', edit_query_path(@query) %> |
+<%= link_to 'Back', queries_path %>
