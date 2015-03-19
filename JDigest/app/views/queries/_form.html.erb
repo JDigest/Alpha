@@ -14,28 +14,32 @@
   <div class="container" id="query_container">
 
     <div class="row">
-      <div class="col-sm-12">
-        <p> Title</p>
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-8">
 
-        <p><img src='/assets/images/title.png' alt='Title image'></p>
-        <!--<p>
-          <% image_tag 'assets/images/title.png' %>
-        </p>
-        -->
+      <p><img src='/assets/title.png' alt='Title image'></p>
+
+      <!-- having troubles getting image_tag to work, could be due to potential issues of asset pipeline settings -->
+        <!-- <p>
+         <% image_tag('title.png', :size => '32x32', :alt => 'Title image') %>
+        </p> -->
+
       </div>
 
     </div>
     <div class="row">
-      <div class="col-sm-7">
-          <%= f.label :query_text %><br>
-          <%= f.text_field :query_text %>
+      <div class="col-sm-2">
+
       </div>
-      <div class="col-sm-3">
-        <%= f.label :location_text %><br>
-        <%= f.text_field :location_text %>
+      <div class="col-sm-8" >
+          <!-- <span><%= f.label :query_text %></span> -->
+          <span><%= f.text_field :query_text, placeholder: "Find The Dream Job", size: 40 %></span>
+          <span> <%= f.text_field :location_text, placeholder: "Anywhere", size: 40 %></span>
+          <span><%= f.submit %> </span>
       </div>
       <div class="col-sm-2">
-          <%= f.submit %>
+
       </div>
 
     </div>
