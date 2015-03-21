@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  query_text: MyString
-  location_text: MyString
-  user_location: MyString
+  query_text: Admin assistant
+  location_text: Coxsackie, NY
+  user_location: 192.168.1.0
 
 two:
-  query_text: MyString
-  location_text: MyString
-  user_location: MyString
+  query_text: Office manager
+  location_text: Toronto, ON
+  user_location: Default
+
+three:
+  query_text: Level 1 Pricing Analyst (ID: 20001)
+  location_text: San Francisco, CA
+  user_location: Default
