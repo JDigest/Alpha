@@ -3,6 +3,11 @@ require 'test_helper'
 class QueriesControllerTest < ActionController::TestCase
   setup do
     @query = queries(:one)
+    @update = {
+      query_text: 'Statistician',
+      location_text: 'Toronto, ON',
+      user_location: '192.168.1.107'
+    }
   end
 
   test "should get index" do
@@ -18,7 +23,7 @@ class QueriesControllerTest < ActionController::TestCase
 
   test "should create query" do
     assert_difference('Query.count') do
-      post :create, query: { location_text: @query.location_text, query_text: @query.query_text, user_location: @query.user_location }
+      post :create, query: @update
     end
 
     assert_redirected_to query_path(assigns(:query))
@@ -35,7 +40,7 @@ class QueriesControllerTest < ActionController::TestCase
   end
 
   test "should update query" do
-    patch :update, id: @query, query: { location_text: @query.location_text, query_text: @query.query_text, user_location: @query.user_location }
+    patch :update, id: @query, query: @update
     assert_redirected_to query_path(assigns(:query))
   end
 
