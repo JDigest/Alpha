@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  result_id: 
+  requirement_id: 
+  year: 9.99
+  level: MyString
+
+two:
+  result_id: 
+  requirement_id: 
+  year: 9.99
+  level: MyString

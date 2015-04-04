@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @result.title %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @result.summary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @result.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @result.url %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @result.source %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @result.level %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @result.type %>
+</p>
+
+<p>
+  <strong>Post date:</strong>
+  <%= @result.post_date %>
+</p>
+
+<p>
+  <strong>Exp date:</strong>
+  <%= @result.exp_date %>
+</p>
+
+<p>
+  <strong>Education req:</strong>
+  <%= @result.education_req %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

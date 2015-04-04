@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  query_id: 
+  tag_id: 
+  relevance: 9.99
+
+two:
+  query_id: 
+  tag_id: 
+  relevance: 9.99

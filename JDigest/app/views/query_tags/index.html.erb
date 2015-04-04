@@ -1,0 +1,29 @@
+<h1>Listing query_tags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Query</th>
+      <th>Tag</th>
+      <th>Relevance</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @query_tags.each do |query_tag| %>
+      <tr>
+        <td><%= query_tag.query %></td>
+        <td><%= query_tag.tag %></td>
+        <td><%= query_tag.relevance %></td>
+        <td><%= link_to 'Show', query_tag %></td>
+        <td><%= link_to 'Edit', edit_query_tag_path(query_tag) %></td>
+        <td><%= link_to 'Destroy', query_tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Query tag', new_query_tag_path %>

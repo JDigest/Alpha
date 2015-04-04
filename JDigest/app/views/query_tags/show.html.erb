@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Query:</strong>
+  <%= @query_tag.query %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @query_tag.tag %>
+</p>
+
+<p>
+  <strong>Relevance:</strong>
+  <%= @query_tag.relevance %>
+</p>
+
+<%= link_to 'Edit', edit_query_tag_path(@query_tag) %> |
+<%= link_to 'Back', query_tags_path %>

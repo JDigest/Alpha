@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  summary: MyString
+  description: MyText
+  url: MyString
+  source: MyString
+  level: MyString
+  type: 
+  post_date: 2015-03-28
+  exp_date: 2015-03-28
+  education_req: MyString
+
+two:
+  title: MyString
+  summary: MyString
+  description: MyText
+  url: MyString
+  source: MyString
+  level: MyString
+  type: 
+  post_date: 2015-03-28
+  exp_date: 2015-03-28
+  education_req: MyString

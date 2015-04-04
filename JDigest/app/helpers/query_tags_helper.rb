@@ -1,0 +1,2 @@
+module QueryTagsHelper
+end

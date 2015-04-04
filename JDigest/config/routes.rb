@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :results
+
+  resources :tag_topics
+
+  resources :query_tags
+
   resources :queries
 
   # The priority is based upon order of creation: first created -> highest priority.
