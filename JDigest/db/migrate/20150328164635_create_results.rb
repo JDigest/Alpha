@@ -16,3 +16,4 @@ class CreateResults < ActiveRecord::Migration
     end
   end
 end
+attr_reader :attr_names
